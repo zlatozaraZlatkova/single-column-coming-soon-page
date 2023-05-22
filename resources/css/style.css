@@ -1,0 +1,271 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Libre+Franklin:wght@300;600;700&display=swap');
+
+/* Default style */
+:root {
+  --blue: hsl(223, 87%, 63%);
+  --pale-blue: hsl(223, 100%, 88%);
+  --light-red: hsl(354, 100%, 66%);
+  --gray: hsl(0, 0%, 59%);
+  --very-dark-blue: hsl(209, 33%, 12%);
+
+  --ff-primary: 'Libre Franklin', sans-serif;
+
+  --fw-400: 400;
+  --fw-700: 700;
+
+  --fs-200: 0.750rem;
+  /*12px*/
+  --fs-400: 0.875rem;
+  /*14px*/
+  --fs-500: 1.25rem;
+  /*20px*/
+
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+
+body {
+  font-family: var(--ff-primary);
+  font-size: var(--fs-500);
+  color: var(--very-dark-blue);
+
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  min-height: 100vh;
+  width: 100%;
+  padding: 30px;
+
+
+}
+
+img {
+  height: 100%;
+  width: 100%;
+}
+
+.hero-img {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.block-text h1 {
+  color: var(--gray);
+  font-size: 50px;
+  font-weight: 400;
+  text-align: center;
+
+}
+
+.block-text span {
+  color: var(--very-dark-blue);
+  font-weight: 700;
+}
+
+.s-margin-top {
+  margin-top: 15px;
+
+}
+
+.s-margin-bottom {
+  margin-bottom: 15px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 100%;
+  margin: 30px 0px 60px 0px;
+
+}
+
+.form-group.error input[type="email"] {
+  border-color: var(--light-red);
+
+}
+
+.error_text {
+  position: absolute;
+  left: 30px;
+  top: 50px;
+  font-size: 14px;
+  color: hsl(354, 100%, 66%);
+
+}
+
+input {
+  height: 50px;
+  width: 100%;
+  font-size: 20px;
+  padding-left: 20px;
+  line-height: 1.57142857;
+  margin-bottom: 30px;
+  color: var(--pale-blue);
+  background-color: white;
+  border: 1px solid var(--pale-blue);
+  border-radius: 30px;
+  outline: none;
+  box-shadow: none;
+  -webkit-box-shadow: none;
+  -webkit-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+  transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+  
+
+}
+
+::placeholder {
+  text-align: start;
+  font-family: 'Libre Franklin', 'Arial Narrow', Arial, sans-serif;
+  color: var(--blue);
+  opacity: 0.3;
+}
+
+
+.btn {
+  height: 50px;
+  width: 100%;
+  font-size: 20px;
+  font-weight: normal;
+  line-height: 1.57142857;
+  text-align: center;
+  white-space: nowrap;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  background-clip: padding-box;
+  border: 1px solid transparent;
+  border-radius: 30px;
+  background: var(--blue);
+  color: white;
+  box-shadow: 0.3rem 0.3rem 0.3rem var(--pale-blue);
+
+
+}
+
+.pull-right {
+  float: right;
+}
+
+.s-margin-left {
+  margin-left: 10px;
+}
+
+.s-margin-top {
+  margin-top: 20px;
+}
+
+
+/*Social Media Icons*/
+
+
+.social-media-icons ul {
+  text-decoration: none;
+}
+
+.social-media-icons li {
+  list-style: none;
+  display: inline-block;
+  font-size: 20px;
+  color: var(--very-dark-blue);
+  border: 1px solid var(--pale-blue);
+  border-radius: 50%;
+
+}
+
+.social-media-icons li:hover {
+  cursor: pointer;
+  border: 1px solid var(--very-dark-blue);
+
+}
+
+.social-media-icons a {
+  font-size: 30px;
+  padding: 10px;
+  line-height: 3px;
+  display: inline-block;
+  color: var(--blue);
+  text-decoration: none;
+}
+
+.social-media-icons a:hover {
+  color: var(--very-dark-blue);
+
+}
+
+/*Section contact info*/
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  color: var(--very-dark-blue);
+  padding-top: 5px;
+}
+
+.attribution a {
+  text-decoration: none;
+  color: var(--very-dark-blue);
+}
+
+.attribution a:hover {
+  color: var(--blue);
+}
+
+/*Media Query*/
+
+@media (min-width: 720px) {
+
+  .form-group {
+    flex-direction: row;
+    max-width: 700px;
+
+  }
+
+  .btn {
+    margin-left: 20px;
+    width: 40%;
+
+  }
+  input {
+    margin-bottom: 0px;
+  }
+
+  .form-group.error input {
+    margin-bottom: 0;
+  }
+
+  .error_text {
+    left: 30px;
+ 
+  }
+
+  .hero-img {
+    max-width: 700px;
+    margin: 0 auto;
+  }
+
+
+
+}
