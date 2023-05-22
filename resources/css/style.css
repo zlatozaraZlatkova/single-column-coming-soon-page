@@ -109,7 +109,8 @@ img {
   position: absolute;
   left: 30px;
   top: 50px;
-  font-size: 14px;
+  font-size: 12px;
+  text-align: start;
   color: hsl(354, 100%, 66%);
 
 }
@@ -221,7 +222,7 @@ input {
   font-size: 11px;
   text-align: center;
   color: var(--very-dark-blue);
-  padding-top: 5px;
+  padding-top: 20px;
 }
 
 .attribution a {
