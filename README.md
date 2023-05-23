@@ -27,7 +27,7 @@ Frontend Mentor QR code mobile.png
 ### Links
 
 - Solution URL: [repository](https://github.com/zlatozaraZlatkova/single-column-coming-soon-page)
-- visit website [website]((https://single-column-coming-soon-page.netlify.app/)
+- visit website [website](https://single-column-coming-soon-page.netlify.app/)
 
 
 ## My process
