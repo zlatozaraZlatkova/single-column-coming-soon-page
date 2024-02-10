@@ -5,6 +5,7 @@
   --blue: hsl(223, 87%, 63%);
   --pale-blue: hsl(223, 100%, 88%);
   --light-red: hsl(354, 100%, 66%);
+  --light-green: hsl(113, 60%, 49%);
   --gray: hsl(0, 0%, 59%);
   --very-dark-blue: hsl(209, 33%, 12%);
 
@@ -105,14 +106,27 @@ img {
 
 }
 
-.error_text {
+.error_text, 
+.notify_text {
   position: absolute;
   left: 30px;
   top: 50px;
   font-size: 12px;
+  font-weight: 600;
   text-align: start;
-  color: hsl(354, 100%, 66%);
+  color:  var(--light-red);
+  opacity: 1;
+  transition: opacity 0.6s;
 
+}
+.notify_text {
+  color:  var(--light-green);
+
+}
+
+.form-group.notify input[type="email"] {
+  border-color: var(--light-green);
+  
 }
 
 input {
