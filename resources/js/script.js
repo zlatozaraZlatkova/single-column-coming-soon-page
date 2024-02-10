@@ -13,7 +13,7 @@ function checkEmail(evn) {
     return;
   }
 
-  const liElement = document.createElement("div");
+  const liElement = document.createElement("li");
   liElement.className = "alert";
 
 
