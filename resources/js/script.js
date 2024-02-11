@@ -21,7 +21,6 @@ function checkEmail(evn) {
     const error = genElements("p", liElement, `* Please provide a valid email address.`, "error_text");
     formRef.appendChild(error);
 
-    formRef.classList.remove("notify");
     formRef.classList.add("error");
     formRef.insertBefore(error, buttonRef);
 
@@ -31,7 +30,6 @@ function checkEmail(evn) {
     const notify = genElements("p", liElement, `* We're happy to see you've joined us!`, "notify_text");
     formRef.appendChild(notify);
 
-    formRef.classList.remove("error");
     formRef.classList.add("notify");
     formRef.insertBefore(notify, buttonRef);
 
